@@ -26,7 +26,7 @@ article {
   min-width: 20em;
   border-radius: 1rem;
   background: rgb(0,239,255);
-  background: linear-gradient(0deg, rgba(0,239,255,1) 40%, #4e54c8 100%);
+  background: linear-gradient(0deg, rgb(204, 0, 255) 40%, #de58bd 100%);
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: .25s;
 }
@@ -40,8 +40,8 @@ header {
 }
 
 h1 {
-  margin: 2rem 0 1rem;
-  color: rgba(0,239,255,1);
+  margin: 2rem 0 0rem;
+  color: rgb(255, 173, 21);
 }
 
 button {
@@ -53,7 +53,7 @@ button {
   padding: .25rem;
   border: none;
   border-radius: 50%;
-  background: rgba(0,239,255,1);
+  background: rgba(187, 57, 66, 0.604);
   transform: scale(.8);
   transition: .25s;
 }
@@ -69,7 +69,7 @@ svg {
   position: absolute;
   top: calc(1.25rem - 12px);
   left: calc(1.25rem - 12px);
-  stroke: #4e54c8;
+  stroke: rgb(255, 173, 21);
   transition-delay: .25s;
 }
 button svg:nth-of-type(2) {
@@ -91,46 +91,26 @@ img {
 dl {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "html-dd css-dd js-dd"
-    "html-dt css-dt js-dt"
-    ;
   justify-items: center;
   align-items: start;
   width: 100%;
-  margin-top: -3rem;
+  margin-top: -3em;
   margin-bottom: 0;
   padding: 5rem 0 3rem;
   text-align: center;
-  background: rgb(255,255,255);
+  background: rgba(187, 57, 66, 0.604);
 }
 
-dt {
-  margin-top: .25rem;
-  padding-top: .25rem;
-  border-top: 1px solid rgba(0,0,0,0.3);
+ul{
   font-weight: bold;
-}
-dt:nth-of-type(1) {
-  grid-area: html-dt;
-}
-dt:nth-of-type(2) {
-  grid-area: css-dt;
-  transform: translateY(1rem);
-}
-dt:nth-of-type(3) {
-  grid-area: js-dt;
+  color: rgb(255, 173, 21);
 }
 
-dd {
-  margin: 0;
-  padding-left: .3rem;
-  transition: .25s .3s;
+li{
+  font-weight:lighter;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.814);
 }
-dd:nth-of-type(2){  
-  transform: translateY(1rem);
-}
-
 p { 
   margin: 0;
 }
