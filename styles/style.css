@@ -12,7 +12,7 @@ body {
   align-items: center;
   height: 100vh;
   font-family: open sans;
-  color: #10214e;
+  color: rgb(21, 44, 158);
 }
 
 article {
@@ -25,7 +25,7 @@ article {
   max-width: 35em;
   min-width: 20em;
   border-radius: 1rem;
-  background: rgb(0,239,255);
+  background: rgb(204, 0, 255);
   background: linear-gradient(0deg, rgb(204, 0, 255) 40%, #de58bd 100%);
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: .25s;
@@ -65,10 +65,10 @@ button {
 }
 button:focus {
   outline: none;
-  background: #202592;
+  background: #bb394296;
 }
 button:focus svg {
-  stroke: rgba(0,239,255,1);
+  stroke: rgb(255, 173, 21);
 }
 
 svg {
@@ -87,7 +87,6 @@ button svg:nth-of-type(2) {
 dl{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
 }
 
 /*breedte van de achtergrond veranderd zodat de lijsten niet aan elkaar zitten.
@@ -101,20 +100,24 @@ ul {
   text-align: center;
   background: rgba(187, 57, 66, 0.604);
 }
-
+/*transistioin zet de tijd voor de transformatie van element dt naar dt:hover */
 dt{
   font-weight: bold;
   color: rgb(255, 173, 21);
+  transition: 250ms;
 }
 
+/*hover zorgt ervoor dat het element andere properties heeft als je er meet je muis overheen gaat.
+transform zorgt ervoor dat het element verandert van scale in dit geval wordt het grooter.
+*/
 dt:hover{
   font-weight: bold;
-  color: rgba(255, 157, 0, 0.734);
+  transform:scale(1.8);
 }
 
 li{
   text-align: left;
-  color: rgba(0, 0, 0, 0.814);
+  color: rgba(21, 44, 158, 0.862);
 }
 
 img {
@@ -148,8 +151,8 @@ body.expand button svg:nth-of-type(2) {
   transition-delay: .25s;
 }
 
-body.expand dd {
-  font-size: 1.75em;
+body.expand dt {
+  font-size: 1.5em;
 }
 
 body.expand img {
