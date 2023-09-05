@@ -22,7 +22,7 @@ article {
   align-items: center;
   justify-content: flex-end;
   width: 50vw;
-  max-width: 25em;
+  max-width: 35em;
   min-width: 20em;
   border-radius: 1rem;
   background: rgb(0,239,255);
@@ -38,7 +38,13 @@ header {
   align-items: center;
   justify-content: flex-end;
 }
+/* margin verannderd zodat de text dichter bij elkaar staat */
+header > p {
+  margin: 0;
+}
 
+/* margin verannderd zodat de title geen margin onderzich heeft. 
+Kleur van text veranderd wat dat is mooier. */
 h1 {
   margin: 2rem 0 0rem;
   color: rgb(255, 173, 21);
@@ -77,51 +83,49 @@ button svg:nth-of-type(2) {
   transition-delay: 0ms;
 }
 
-img {
-  position: relative;
-  top: 2rem;
-  width: 10em;
-  height: auto;
-  border: 5px solid #fff;
-  border-radius: 10em;
-  box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
-  transition: .25s .15s;
-}
-
-dl {
+/*Display de lijst in een grid zodat ze niet onderelkaar komen te staan.*/
+dl{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  align-items: start;
-  width: 100%;
-  margin-top: -3em;
+}
+
+/*breedte van de achtergrond veranderd zodat de lijsten niet aan elkaar zitten.
+border er omheen gezet*/
+ul {
+  width: 90%;
+  margin-top: 1em;
   margin-bottom: 0;
-  padding: 5rem 0 3rem;
+  padding: 3rem 3rem 3rem;
+  border-radius: 3em;
   text-align: center;
   background: rgba(187, 57, 66, 0.604);
 }
 
-ul{
+dt{
   font-weight: bold;
   color: rgb(255, 173, 21);
 }
 
+dt:hover{
+  font-weight: bold;
+  color: rgba(255, 157, 0, 0.734);
+}
+
 li{
-  font-weight:lighter;
   text-align: left;
   color: rgba(0, 0, 0, 0.814);
 }
-p { 
-  margin: 0;
-}
 
-article > p {
-  width: 100%;
-  margin-top: 0;
-  padding: 3rem 2rem;
-  border-radius: 0 0 1rem 1rem;
-  text-align: center;
-  background: rgba(255,255,255, 0.5);
+img {
+  position: relative;
+  top: 0rem;
+  bottom: 1rem;
+  width: 10em;
+  height: auto;
+  border-radius: 5em;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+  transition: .25s .15s;
 }
 
 /* expand content */
