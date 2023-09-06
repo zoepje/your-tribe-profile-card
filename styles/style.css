@@ -7,7 +7,7 @@ html {
 }
 
 body{
-  font-family: Arial;
+  font-family: Copperplate;
   text-align: center;
   background-color: #00E1D8;
 }
@@ -23,17 +23,36 @@ article{
 section{
   margin: 2rem;
   padding: 3rem;
-  background: linear-gradient(rgb(204, 0, 255) 40%, #de58bd);
+  background: linear-gradient(rgb(168, 0, 210) 40%, #ff66d9);
   border-radius: 1em;
+}
+
+#boven{
+  background: linear-gradient(rgb(79, 3, 98) 5%, #8f026c);
+  width: 50vw;
+  min-width: 30em;
 }
 
 h1{
   margin: 3rem;
-  font-size: 4em;
-  font-weight: bold;
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 5em;
+}
+
+h1> p {
+  font-weight: lighter;
+  margin-top:0;
+  margin-bottom: 3rem;
+  text-align: right;/* werkt niet want box veranderdt van grootte */
+}
+
+h2{
+  font-size: 2em;
 }
 
 h3{
+  font-size: 1em;
   transition: 0.75s;
 }
 
@@ -62,18 +81,22 @@ ul > li > ul{
 
 #info {
   color:rgb(42, 15, 15);
+  font-family: 'Verdana';
 }
 
 #muziek{
   color:blue;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #sport{
   color:beige;
+  font-family: Haettenschweiler, sans-serif;
 }
 
 #fandom{
   color:aquamarine;
+  font-family: american typewriter, sans-serif;
 }
 
 
