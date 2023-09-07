@@ -9,7 +9,21 @@ html {
 body{
   font-family: Copperplate;
   text-align: center;
-  background-color: #00E1D8;
+  background-color: #d2e5ff;
+  color: #FFFE02;
+}
+
+button{
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: .25rem;
+  border: none;
+  border-radius: 50%;
+  color:#FFFE02;
+  background: rgba(57, 178, 187, 0.604);
 }
 
 article{
@@ -21,14 +35,15 @@ article{
 }
 
 section{
+  position: relative;
   margin: 2rem;
   padding: 3rem;
-  background: linear-gradient(rgb(168, 0, 210) 40%, #ff66d9);
+  background: linear-gradient(130deg, #52d1ff 32.35%, #2775d5);
   border-radius: 1em;
+  transition: 1s;
 }
 
 #boven{
-  background: linear-gradient(rgb(79, 3, 98) 5%, #8f026c);
   width: 50vw;
   min-width: 30em;
 }
@@ -44,11 +59,16 @@ h1> p {
   font-weight: lighter;
   margin-top:0;
   margin-bottom: 3rem;
-  text-align: right;/* werkt niet want box veranderdt van grootte */
+  text-align: right;
 }
 
 h2{
   font-size: 2em;
+  transition: 1.5s;
+}
+
+h2:hover{
+  transform: rotateY(360deg);
 }
 
 h3{
@@ -65,11 +85,12 @@ ul{
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: start;
+  padding: 0 3rem;
 }
 
 ul > li {
   list-style: none;
-  margin: 2rem;
+  margin: 2rem 0;
 }
 
 ul > li > ul{
@@ -80,26 +101,40 @@ ul > li > ul{
 }
 
 #info {
-  color:rgb(42, 15, 15);
-  font-family: 'Verdana';
+  color:rgb(184, 3, 252);
+  font-family: 'Tahoma', sans-serif;
+}
+
+a{
+  color:rgb(184, 3, 252);
 }
 
 #muziek{
-  color:blue;
+  color:rgb(3, 35, 224);
   font-family: 'Times New Roman', Times, serif;
 }
 
 #sport{
-  color:beige;
-  font-family: Haettenschweiler, sans-serif;
+  color:rgb(255, 228, 184);
+  font-family: 'Andalé Mono', monospace;
 }
 
 #fandom{
-  color:aquamarine;
-  font-family: american typewriter, sans-serif;
+  color:rgb(87, 252, 178);
+  font-family: 'Comic Sans MS', cursive;
 }
 
+section.back{
+  opacity: 0;
+}
 
+/*flip stuff*/
+body.flip section.front{
+  opacity: 0;
+}
 
+body.flip section.back{
+  opacity: 1;
+}
 
 
